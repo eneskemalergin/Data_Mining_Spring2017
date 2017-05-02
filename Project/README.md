@@ -1,36 +1,43 @@
 # Project
 
-## Dataset: Diabetes Dataset
+## Dataset Titanic Dataset from Kaggle: [link](https://www.kaggle.com/c/titanic/data)
 
-> data is **tab separated** (data/)
+About Dataset:
 
-Diabetes files consist of four fields per record. Each field is separated by a tab and each record is separated by a newline.
+    VARIABLE DESCRIPTIONS:
+    survival        Survival
+                    (0 = No; 1 = Yes)
+    pclass          Passenger Class
+                    (1 = 1st; 2 = 2nd; 3 = 3rd)
+    name            Name
+    sex             Sex
+    age             Age
+    sibsp           Number of Siblings/Spouses Aboard
+    parch           Number of Parents/Children Aboard
+    ticket          Ticket Number
+    fare            Passenger Fare
+    cabin           Cabin
+    embarked        Port of Embarkation
+                    (C = Cherbourg; Q = Queenstown; S = Southampton)
 
-File Names and format:
-1. Date in MM-DD-YYYY format
-2. Time in XX:YY format
-3. Code
-4. Value
+    SPECIAL NOTES:
+    Pclass is a proxy for socio-economic status (SES)
+     1st ~ Upper; 2nd ~ Middle; 3rd ~ Lower
 
-The Code field is deciphered as follows:
+    Age is in Years; Fractional if Age less than One (1)
+     If the Age is Estimated, it is in the form xx.5
 
-- 33 = Regular insulin dose
-- 34 = NPH insulin dose
-- 35 = UltraLente insulin dose
-- 48 = Unspecified blood glucose measurement
-- 57 = Unspecified blood glucose measurement
-- 58 = Pre-breakfast blood glucose measurement
-- 59 = Post-breakfast blood glucose measurement
-- 60 = Pre-lunch blood glucose measurement
-- 61 = Post-lunch blood glucose measurement
-- 62 = Pre-supper blood glucose measurement
-- 63 = Post-supper blood glucose measurement
-- 64 = Pre-snack blood glucose measurement
-- 65 = Hypoglycemic symptoms
-- 66 = Typical meal ingestion
-- 67 = More-than-usual meal ingestion
-- 68 = Less-than-usual meal ingestion
-- 69 = Typical exercise activity
-- 70 = More-than-usual exercise activity
-- 71 = Less-than-usual exercise activity
-- 72 = Unspecified special event
+    With respect to the family relation variables (i.e. sibsp and parch)
+    some relations were ignored.  The following are the definitions used
+    for sibsp and parch.
+
+    Sibling:  Brother, Sister, Stepbrother, or Stepsister of Passenger Aboard Titanic
+    Spouse:   Husband or Wife of Passenger Aboard Titanic (Mistresses and Fiances Ignored)
+    Parent:   Mother or Father of Passenger Aboard Titanic
+    Child:    Son, Daughter, Stepson, or Stepdaughter of Passenger Aboard Titanic
+
+    Other family relatives excluded from this study include cousins,
+    nephews/nieces, aunts/uncles, and in-laws.  Some children travelled
+    only with a nanny, therefore parch=0 for them.  As well, some
+    travelled with very close friends or neighbors in a village, however,
+    the definitions do not support such relations.
