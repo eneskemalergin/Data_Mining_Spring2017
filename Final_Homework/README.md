@@ -1,43 +1,37 @@
 # Final Homework
 
-## Dataset Titanic Dataset from Kaggle: [link](https://www.kaggle.com/c/titanic/data)
+## Using Pokemon Dataset from Kaggle: [Link](https://www.kaggle.com/abcsds/pokemon)
 
-About Dataset:
+#### About Dataset:
 
-    VARIABLE DESCRIPTIONS:
-    survival        Survival
-                    (0 = No; 1 = Yes)
-    pclass          Passenger Class
-                    (1 = 1st; 2 = 2nd; 3 = 3rd)
-    name            Name
-    sex             Sex
-    age             Age
-    sibsp           Number of Siblings/Spouses Aboard
-    parch           Number of Parents/Children Aboard
-    ticket          Ticket Number
-    fare            Passenger Fare
-    cabin           Cabin
-    embarked        Port of Embarkation
-                    (C = Cherbourg; Q = Queenstown; S = Southampton)
+> This dataset contains a full set of in-game statistics for all 802 pokemon in the Sun and Moon. It also includes full information on which pokemon can learn which moves (movesets.csv), what moves can do (moves.csv), and how damage is modified by pokemon type (type-chart.csv). But for this project I am going to ignore them.
 
-    SPECIAL NOTES:
-    Pclass is a proxy for socio-economic status (SES)
-     1st ~ Upper; 2nd ~ Middle; 3rd ~ Lower
+ - **id:** unique id for each pokemon species
+ - **forme:** used to differentiate different forms of a single pokemon species
+ - **type1:** the first type of this pokemon
+ - **type2:** the secondary type of this pokemon (if it has one)
+ - **hp:** hit points, or health, defines how much damage a pokemon can withstand before fainting
+ - **attack:**  the base modifier for physical attacks
+ - **defense:** the base damage resistance against physical attacks
+ - **spattack:** special attack, the base modifier for special attacks
+ - **spdefense:** the base damage resistance against special attacks
+ - **speed:** used in determining which pokemon attacks first each round
+ - **total:** the sum of hp, attack, defense, spattack, spdefense, and speed
 
-    Age is in Years; Fractional if Age less than One (1)
-     If the Age is Estimated, it is in the form xx.5
+#### Columns to ignore:
 
-    With respect to the family relation variables (i.e. sibsp and parch)
-    some relations were ignored.  The following are the definitions used
-    for sibsp and parch.
-
-    Sibling:  Brother, Sister, Stepbrother, or Stepsister of Passenger Aboard Titanic
-    Spouse:   Husband or Wife of Passenger Aboard Titanic (Mistresses and Fiances Ignored)
-    Parent:   Mother or Father of Passenger Aboard Titanic
-    Child:    Son, Daughter, Stepson, or Stepdaughter of Passenger Aboard Titanic
-
-    Other family relatives excluded from this study include cousins,
-    nephews/nieces, aunts/uncles, and in-laws.  Some children travelled
-    only with a nanny, therefore parch=0 for them.  As well, some
-    travelled with very close friends or neighbors in a village, however,
-    the definitions do not support such relations.
+ - **ndex:** the pokedex number for this pokemon
+ - **species:** the name of this pokemon
+ - **ability1:** the first ability this pokemon could have
+ - **ability2:** the second ability this pokemon could have
+ - **abilityH:** the hidden ability this pokemon could have instead of ability1 or ability2
+ - **weight:** the pokemon's weight in lbs
+ - **height:** the pokemon's height in feet and inches
+ - **dex1:** first pokedex description of this pokemon
+ - **dex2:** second pokedex description of this pokemon
+ - **class:** the thematic class of pokemon this species is (does not influence game mechanics)
+ - **percent-male:** the percentage of pokemon of this species which are male
+ - **percent-female:** the percentage of pokemon of this species which are female
+ - **pre-evolution:** the pokemon that evolves into this pokemon
+ - **egg-group1:** a pokemon can breed with any other pokemon in the same egg group
+ - **egg-group2:** a pokemon can breed with any other pokemon in the same egg group
